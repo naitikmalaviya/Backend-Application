@@ -57,7 +57,7 @@ The following points are optional but give additional credit:
 ## Setup Instructions
 
 - Run `docker-compose up -d` command in Backend-Application directory. It should create **mysql**, **redis** and **product-api** containers.
-- Try to access `http://localhost:5001/swagger`. If it is not accessible then try running `docker-compose up -d` command again. It might happen because of mysql takes sometime in startup and dotnet container might be trying to connect to mysql container to create schemas and tables. After running `docker-compose up -d` second time, swagger api should be accessible now.
+- Try to access `http://localhost:5000/swagger`. If it is not accessible then try running `docker-compose up -d` command again. It might happen because of mysql takes sometime in startup and dotnet container might be trying to connect to mysql container to create schemas and tables. After running `docker-compose up -d` second time, swagger api should be accessible now.
 - Use `/user/authenticate` api to get userToken. Following users are prepopulated in mysql DB.
   - **Username:** Brett, **Password:** pass@123
   - **Username:** Gray, **Password:** pass@123
